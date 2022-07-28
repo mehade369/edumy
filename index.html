@@ -12,6 +12,17 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              hero: "url('./images/cover/cover-1.png')",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <header class="px-4 py-10">
@@ -52,6 +63,26 @@
         </div>
       </nav>
       <!-- end of navbar -->
+
+      <section class="card bg-base-100 shadow-xl image-full my-8">
+        <figure>
+          <img class="" src="./images/cover/cover-1.png" alt="Cover" />
+        </figure>
+        <div class="card-body p-10">
+          <h1 class="card-title text-4xl font-bold">Get started with Edumy</h1>
+          <p>
+            Edumy is a free, open-source, online education platform that
+            provides a simple, secure, and scalable way to build your own online
+            education website.
+          </p>
+
+          <div class="card-actions justify-center">
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of hero -->
     </header>
   </body>
 </html>
