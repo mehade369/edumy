@@ -211,7 +211,7 @@
       <!-- start of Popular Courses -->
       <section>
         <header class="text-center">
-          <h2 class="text-2xl font-bold">Discover Our Popular Courses</h2>
+          <h2 class="text-4xl font-bold">Discover Our Popular Courses</h2>
           <p class="py-4 text-gray-500">
             We have a wide range of courses available for you to choose from.
             Whether you are a student or an instructor, we have the courses you
@@ -367,7 +367,7 @@
       <!-- end of Popular Courses  -->
 
       <!-- CTA section start here -->
-      <section class="bg-cyan-400 rounded-xl my-10 p-4 lg:p-20">
+      <section class="bg-cyan-400 rounded-xl my-20 p-4 lg:p-20">
         <div class="flex flex-col lg:flex-row lg:justify-between items-between">
           <div class="flex flex-col justify-center items-center text-white">
             <h2 class="text-2xl lg:text-5xl">Ready to join?</h2>
@@ -410,84 +410,104 @@
 
       <!-- FAQ section start here -->
       <section class="my-10">
-        <header>
-          <h1 class="text-2xl">Frequently Asked Questions</h1>
-          <p class="py-4">
-            Top and most frequently asked questions about the course.
-          </p>
-        </header>
-
-        <main class="flex flex-col gap-2">
-          <div
-            tabindex="0"
-            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
-          >
-            <div class="collapse-title text-xl font-medium">
-              What's the diffrence between a flexbox and a grid?
+        <div class="container mx-auto px-60">
+          <header>
+            <h1 class="text-4xl">Frequently Asked Questions</h1>
+            <p class="py-4">
+              Top and most frequently asked questions about the course.
+            </p>
+          </header>
+          <main class="flex flex-col gap-2">
+            <div
+              tabindex="0"
+              class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What's the diffrence between a flexbox and a grid?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Flexbox is a layout system that allows you to display elements
+                  in a row or column. Grid is a layout system that allows you to
+                  display elements in a two dimensional grid.
+                </p>
+              </div>
             </div>
-            <div class="collapse-content">
-              <p>
-                Flexbox is a layout system that allows you to display elements
-                in a row or column. Grid is a layout system that allows you to
-                display elements in a two dimensional grid.
-              </p>
+            <div
+              tabindex="1"
+              class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What's the diffrence between a bootstrap and a tailwind?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Both of them are frameworks that help you to build a website
+                  faster. But, they follow different ways to solve the puzzle.
+                  Bootstrap follows premade components based design, so we don't
+                  need to design the UI from scratch. While Tailwind follows
+                  utility classes, so we need to design the UI from scratch.
+                  With Tailwind, we have more granular control over the styling
+                  of our components.
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            tabindex="1"
-            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
-          >
-            <div class="collapse-title text-xl font-medium">
-              What's the diffrence between a bootstrap and a tailwind?
+            <div
+              tabindex="2"
+              class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What is CSS Box Model?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  In CSS, the term "box model" is used when talking about design
+                  and layout. The CSS box model is essentially a box that wraps
+                  around every HTML element. It consists of: margins, borders,
+                  padding, and the actual content.
+                </p>
+              </div>
             </div>
-            <div class="collapse-content">
-              <p>
-                Both of them are frameworks that help you to build a website
-                faster. But, they follow different ways to solve the puzzle.
-                Bootstrap follows premade components based design, so we don't
-                need to design the UI from scratch. While Tailwind follows
-                utility classes, so we need to design the UI from scratch. With
-                Tailwind, we have more granular control over the styling of our
-                components.
-              </p>
+            <div
+              tabindex="3"
+              class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+            >
+              <div class="collapse-title text-xl font-medium">
+                What is Semantic tags in CSS?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Semantic HTML elements are those that clearly describe their
+                  meaning in a human- and machine-readable way. Elements such as
+                  code header , footer and article are all considered semantic
+                  because they accurately describe the purpose of the element
+                  and the type of content that is inside them
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            tabindex="2"
-            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
-          >
-            <div class="collapse-title text-xl font-medium">
-              What is CSS Box Model?
-            </div>
-            <div class="collapse-content">
-              <p>
-                In CSS, the term "box model" is used when talking about design
-                and layout. The CSS box model is essentially a box that wraps
-                around every HTML element. It consists of: margins, borders,
-                padding, and the actual content.
-              </p>
-            </div>
-          </div>
-          <div
-            tabindex="3"
-            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
-          >
-            <div class="collapse-title text-xl font-medium">
-              What is Semantic tags in CSS?
-            </div>
-            <div class="collapse-content">
-              <p>
-                Semantic HTML elements are those that clearly describe their
-                meaning in a human- and machine-readable way. Elements such as
-                code header , footer and article are all considered semantic
-                because they accurately describe the purpose of the element and
-                the type of content that is inside them
-              </p>
-            </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </section>
       <!-- FAQ section end here -->
+
+      <!-- Trusted by section start here  -->
+      <section class="hidden lg:flex lg:flex-col lg:items-center my-40">
+        <h1 class="text-4xl">
+          Trusted by <span class="text-primary">900+</span> companies
+        </h1>
+
+        <div class="m-4"></div>
+
+        <div class="flex space-x-10">
+          <img src="./images/company/company-1.png" alt="company-1" />
+          <img src="./images/company/company-2.png" alt="company-2" />
+          <img src="./images/company/company-3.png" alt="company-3" />
+          <img src="./images/company/company-4.png" alt="company-4" />
+          <img src="./images/company/company-5.png" alt="company-5" />
+          <img src="./images/company/company-6.png" alt="company-6" />
+        </div>
+      </section>
+      <!-- Trusted by section end here  -->
     </main>
 
     <footer class="bg-zinc-800 text-gray-100 p-14">
